@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+}
+
+.Title {
+  position: relative;
+  top: -5px;
+}
+
+.Navi{
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+  text-align: center;
+  padding: 10px;
+  width: 40%; 
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.NaviBtn{
+  position: relative;
+  background-color: rgb(63,81,181);
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 20px;
+  height: 3rem;
+  color: white;
+  width: 6rem;
+  border: 0;
+  outline: 0;
+}
+
+.Select{
+  position: relative;
+  top: 1px;
+  height: 3rem;
+  width: 6rem;
+  font-size: 20px;
+  outline: 0;
+}
+
+.Calender{
+  background-color: whitesmoke;
+  margin: 10px auto;
+  padding: 7px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.CalItem{
+  position: relative;
+  overflow: hidden;
+  width: 6rem;
+  height: 3.5rem;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #6975D7;
+  margin: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
