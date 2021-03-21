@@ -1,5 +1,5 @@
 // Write All of Your Data JavaScript File's Name.
-let array = ['2021-01','2021-02','2021-12']
+let array = ['2021-01','2021-02']
 
 // Don't Touch Here.
 // This Code Will Automatically Imports Written JavaScript Files In Html.
