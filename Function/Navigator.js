@@ -43,7 +43,7 @@ function HideAllCalender(){
 
 function ChangeTo(){
     var Index = select.selectedIndex
-    document.getElementById('Title').innerText = array[Index].replace('-',' - ')
+    document.getElementById('Title').innerText = array[Index].replace('-',' / ')
     document.getElementById(select.value).style.display = 'block'
 }
 
