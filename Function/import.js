@@ -36,7 +36,7 @@ div.className = 'Calender'
 document.getElementById('Calender').appendChild(div)
 
 var Color = '#0D1E32'
-var highlightColor = '#D9373B'
+var highlightColor = '#AB0101'
 
 for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
     var selection = Constantine.slice(String(7*(n-1)), String(7*n))
