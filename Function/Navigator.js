@@ -1,5 +1,5 @@
 function Boot(){
-    document.getElementById('Title').innerText = array[0].replace('-',' - ')
+    document.getElementById('Title').innerText = array[0].replace('-',' / ')
     var select = document.getElementById('select')
 
     for (b=0;b<array.length;b++){
@@ -13,23 +13,23 @@ function Boot(){
 function Condition(){
     if (select.value == array[0]){
         var left = document.getElementById('left')
-        left.style.backgroundColor = 'gray'
+        left.style.backgroundColor = '#4d5257'
         left.setAttribute('onpointerdown','')
         left.style.pointerEvents = 'none'
     } else {
         var left = document.getElementById('left')
-        left.style.backgroundColor = 'rgb(63,81,181)'
+        left.style.backgroundColor = '#0D1E32'
         left.setAttribute('onpointerdown',"ripplet(arguments[0], {opacity:'0.25'})")
         left.style.pointerEvents = 'auto'
     }
     if (select.value == array[array.length-1]){
         var right = document.getElementById('right')
-        right.style.backgroundColor = 'gray'
+        right.style.backgroundColor = '#4d5257'
         right.setAttribute('onpointerdown','')
         right.style.pointerEvents = 'none'
     } else {
         var right = document.getElementById('right')
-        right.style.backgroundColor = 'rgb(63,81,181)'
+        right.style.backgroundColor = '#0D1E32'
         right.setAttribute('onpointerdown',"ripplet(arguments[0], {opacity:'0.25'})")
         right.style.pointerEvents = 'auto'
     }
@@ -37,14 +37,14 @@ function Condition(){
 
 function HideAllCalender(){
     for (h=0;h<array.length;h++){
-        document.getElementById(array[h] + '.js').style.display = 'none'
+        document.getElementById(array[h]).style.display = 'none'
     }
 }
 
 function ChangeTo(){
     var Index = select.selectedIndex
     document.getElementById('Title').innerText = array[Index].replace('-',' - ')
-    document.getElementById(select.value + '.js').style.display = 'block'
+    document.getElementById(select.value).style.display = 'block'
 }
 
 function SelectChange(){
@@ -54,14 +54,14 @@ function SelectChange(){
 }
 
 function LeftClick(){
-    document.getElementById(select.value + '.js').style.display = 'none'
+    document.getElementById(select.value).style.display = 'none'
     select.selectedIndex = select.selectedIndex - 1
     Condition()
     ChangeTo()
 }
 
 function RightClick(){
-    document.getElementById(select.value + '.js').style.display = 'none'
+    document.getElementById(select.value).style.display = 'none'
     select.selectedIndex = select.selectedIndex + 1
     Condition()
     ChangeTo()

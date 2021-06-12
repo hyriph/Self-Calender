@@ -1,15 +1,17 @@
 body {
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .Title {
   position: relative;
-  top: -5px;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .Navi{
   position: relative;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 2px;
   text-align: center;
   padding: 10px;
@@ -20,12 +22,12 @@ body {
 
 .NaviBtn{
   position: relative;
-  background-color: rgb(63,81,181);
+  background-color: #0D1E32;
   border-radius: 2px;
   overflow: hidden;
   font-size: 20px;
   height: 3rem;
-  color: white;
+  color: whitesmoke;
   width: 6rem;
   border: 0;
   outline: 0;
@@ -38,17 +40,17 @@ body {
   width: 6rem;
   font-size: 20px;
   outline: 0;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .Calender{
   background-color: whitesmoke;
-  margin: 10px auto;
-  padding: 7px;
+  margin: auto;
   width: fit-content;
   height: fit-content;
   border-radius: 3px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .CalItem{
@@ -57,10 +59,10 @@ body {
   width: 6rem;
   height: 3.5rem;
   padding: 10px;
-  color: #fff;
+  color: whitesmoke;
   margin-top: 10px;
+  background-color: #0D1E32;
   margin-bottom: 10px;
-  background-color: #6975D7;
   margin: 1px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;

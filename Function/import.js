@@ -30,34 +30,30 @@ for (i = 1; i < Dates+1; i++) { Constantine.push(String(i)) }
 for (s = 0; s < suffix; s++) { Constantine.push('0') }
 
 var div = document.createElement('div')
-div.id = jsname
+div.id = jsname.replace('.js','')
 div.style.display = 'none'
 div.className = 'Calender'
 document.getElementById('Calender').appendChild(div)
 
-var Color = '#3A3644'
-var highlightColor = '#FC5546'
-console.log(Color)
-console.log(highlightColor)
+var Color = '#0D1E32'
+var highlightColor = '#D9373B'
 
 for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
     var selection = Constantine.slice(String(7*(n-1)), String(7*n))
     var align = document.createElement('div')
     align.id = jsname.replace('.js','') + '_' + String(n)
     align.className = 'CalLine'
-    document.getElementById(jsname).appendChild(align)
+    document.getElementById(jsname.replace('.js','')).appendChild(align)
     for (a = 0; a < selection.length; a++){
         var button = document.createElement('button')
         button.id = jsname.replace('.js','') + '_' + 'Button'
         button.className = 'CalItem'
-        button.onpointerdown = "ripplet(arguments[0])"
-        button.setAttribute('onpointerdown', 'ripplet(arguments[0], {opacity:\'0.25\'})')
-        //button.setAttribute('onpointerenter', 'ripplet(arguments[0], { clearing: false, opacity:\'0.25\' })')
-        //button.setAttribute('onpointerleave', 'ripplet.clear(this)')
+        // button.onpointerdown = "ripplet(arguments[0])"
+        // button.setAttribute('onpointerdown', 'ripplet(arguments[0], {opacity:\'0.25\'})')
         if (selection[a] != 0) {button.innerText = selection[a]}
         else {button.innerText = '　'}
         button.title = 0
-        button.style.backgroundColor = Color
+        // button.style.backgroundColor = Color
         if (ChecksPush != undefined){
             for (c=0;c<Checks.length;c++){
                 if (button.innerText == Checks[c].split(':')[0]){
@@ -71,17 +67,17 @@ for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
 }
 
 var select = document.getElementById('select')
-document.getElementById(select.value + '.js').style.display = 'block'
+document.getElementById(select.value).style.display = 'block'
 
 if (select.value == array[0]){
     var left = document.getElementById('left')
-    left.style.backgroundColor = 'gray'
+    left.style.backgroundColor = '#4d5257'
     left.setAttribute('onpointerdown','')
     left.style.pointerEvents = 'none'
 } 
 if (select.value == array[array.length-1]){
     var right = document.getElementById('right')
-    right.style.backgroundColor = 'gray'
+    right.style.backgroundColor = '#4d5257'
     right.setAttribute('onpointerdown','')
     right.style.pointerEvents = 'none'
 }
