@@ -38,6 +38,8 @@ document.getElementById('Calender').appendChild(div)
 var Color = '#0D1E32'
 var highlightColor = '#AB0101'
 
+var levelColor = ['#AB0101','#6e0000','#400000']
+
 for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
     var selection = Constantine.slice(String(7*(n-1)), String(7*n))
     var align = document.createElement('div')
@@ -51,7 +53,7 @@ for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
         // button.onpointerdown = "ripplet(arguments[0])"
         // button.setAttribute('onpointerdown', 'ripplet(arguments[0], {opacity:\'0.25\'})')
         if (selection[a] != 0) {button.innerText = selection[a]}
-        else {button.innerText = '　'}
+        else {button.innerText = '0'; button.style.color = 'transparent'}
         button.title = 0
         // button.style.backgroundColor = Color
         if (ChecksPush != undefined){
