@@ -58,8 +58,17 @@ for (n = 1; n < Math.ceil(Constantine.length / 7) + 1; n++) {
         // button.style.backgroundColor = Color
         if (ChecksPush != undefined){
             for (c=0;c<Checks.length;c++){
+                let count = Checks[c].split(':')[1]
                 if (button.innerText == Checks[c].split(':')[0]){
-                    button.style.backgroundColor = highlightColor
+                    if (count == 1) {
+                        button.style.backgroundColor = levelColor[0]
+                    } else if (count == 2) {
+                        button.style.backgroundColor = levelColor[1]
+                    } else if (count == 3) {
+                        button.style.backgroundColor = levelColor[2]
+                    } else {
+                        button.style.backgroundColor = 'black'
+                    }
                     button.title = Checks[c].split(':')[1]
                 }
             }
