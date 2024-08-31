@@ -1,3 +1,3 @@
 # Self-Calender
 
-https://str-hk.github.io/Self-Calender/
+https://hyriph.github.io/Self-Calender/
